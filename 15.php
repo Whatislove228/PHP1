@@ -35,6 +35,9 @@ if($a === false || $b === false) {
              $result = "{$a}{$operator}{$b} = " . ($a / $b);
          }
          break;
+     case '%':
+         $result = "{$a}{$operator}{$b} = " .($a % $b);
+         break;
      default:
          echo "ERROR";
  }
