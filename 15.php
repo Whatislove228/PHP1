@@ -36,7 +36,13 @@ if($a === false || $b === false) {
          }
          break;
      case '%':
-         $result = "{$a}{$operator}{$b} = " .($a % $b);
+         if ($b == 0) {
+             echo "Stop,if you do this, i'll kill you";
+
+         }
+         else {
+         $result = "{$a}{$operator}{$b} = " . ($a % $b);
+     }
          break;
      default:
          echo "ERROR";
